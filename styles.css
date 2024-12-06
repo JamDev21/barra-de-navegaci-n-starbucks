@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    /* border-bottom: 2px solid #000000; */
+    box-shadow: 0px 8px 10px -5px #dad5d5;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 180px;
+}
+
+.div1{
+    display: flex;
+    /* margin: 10px  0px 10px 10px; */
+    align-items: center;
+    font-weight: bold;
+}
+
+.div2{
+    display: flex;
+    /* margin: 10px  0px 10px 800px; */
+    align-items: center;
+    position: absolute;
+    right: 200px;
+}
+
+.img-logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left:140px;
+}
+
+.img-logo:hover{
+    cursor: pointer;
+}
+
+.img-ubicacion{
+    width: 40px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+#p-primer-nav{
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding: 0px 30px 0px 40px;
+}
+
+#p-primer-nav:hover{
+    cursor:pointer;
+    color: #006241;
+}
+
+/* Para colocar la barra verde por deja al pasar el cursor */
+#p-primer-nav::after {
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    width: 0;
+    height: 10px;
+    height: 3px;
+    background-color: green;
+    transition: width 0.3s ease-in-out;
+  }
+
+#p-primer-nav:hover::after {
+    width: 100%;
+    height: 10px;
+  }
+/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
+
+#section-menu{
+    display: flex;
+    position: absolute;
+    left: 300px;
+
+}
+
+#buton-1{
+    display: flex;
+    background-color: #ffffff;
+    border: none;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+#buton-1:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#button-2{
+    background-color: #ffffff;
+    border-radius: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+    margin: 50px;
+}
+
+#button-2:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#button-3{
+    background-color: #000000;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+}
+
+#button-3:hover{
+   cursor: pointer;
+   opacity: 0.7;
+}
